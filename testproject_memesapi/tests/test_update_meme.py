@@ -23,8 +23,8 @@ def test_negative_wrongtoken_update_meme(put_endpoint, create_meme_for_test):
         "tags": ["updated", "api"],
         "info": {"author": "memecreator"}
     }
-    invalid_headers = {"Authorization": "wrong_token"}
-    put_endpoint.update_meme(create_meme_for_test, payload, invalid_headers)
+    headers = {"Authorization": "wrong_token"}
+    put_endpoint.update_meme(create_meme_for_test, payload, headers)
     put_endpoint.check_unauthorized_response_code()
 
 
