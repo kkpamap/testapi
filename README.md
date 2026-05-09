@@ -1,4 +1,4 @@
-# testapi# Memes API Tests
+# Memes API Tests
 
 Project for API testing of http://memesapi.course.qa-practice.com/
 
